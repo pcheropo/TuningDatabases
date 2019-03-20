@@ -8,6 +8,9 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.Scanner;
 
+//Panteleimon Cheropoulos 1323152
+//Ioannis Chalkias 1420974
+
 public class Blatt01 {
 
 	public static void main(String[] args)  throws Exception{

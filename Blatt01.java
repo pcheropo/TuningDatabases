@@ -46,7 +46,7 @@ public class Blatt01 {
 			e.printStackTrace();
 			return;
 		}
-		
+
 		String create_table = " CREATE TABLE auth(name varchar(49),pubID varchar(129));";	
 		con.createStatement().execute(create_table);
 	            
@@ -135,7 +135,7 @@ public class Blatt01 {
 		reader.close();
 		long end = System.currentTimeMillis();
 		long runtime = end - start;
-		System.out.println("Runtime in seconds: " + runtime/1000);
+		System.out.println("Runtime in milliseconds: " + runtime);
 	}
   
 	public static void single_query(String path,Connection con) {
@@ -148,7 +148,7 @@ public class Blatt01 {
 			con.createStatement().execute(qry);
 			long end = System.currentTimeMillis();
 			long runtime = end - start;
-			System.out.println("Runtime in seconds: " + runtime/1000);
+			System.out.println("Runtime in milliseconds: " + runtime);
 			System.out.println("Query sucessful.");
 		} catch (Exception e) {
 			System.err.println("Query was not successful.");
@@ -182,7 +182,7 @@ public class Blatt01 {
 		reader.close();
 		long end = System.currentTimeMillis();
 		long runtime = end - start;
-		System.out.println("Runtime in seconds: " + runtime/1000);
+		System.out.println("Runtime in milliseconds: " + runtime);
 	}   
 	
 }

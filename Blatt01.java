@@ -72,8 +72,12 @@ public class Blatt01 {
         long end = System.currentTimeMillis();
         long runtime = end - start;
         System.out.println("Runtime in milliseconds: " + runtime);
-        String query = "DROP TABLE auth;";
-        con.createStatement().execute(query);
+        System.out.println("Do you want to Drop the table (yes)? ");
+        input = sc.nextLine();
+        if(input.equals("yes")) {
+           String query = "DROP TABLE auth;";
+           con.createStatement().execute(query);
+        }
     }
     
    static String getValues(String path) throws Exception {

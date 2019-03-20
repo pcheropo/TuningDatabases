@@ -47,7 +47,6 @@ public class Blatt01 {
 			return;
 		}
 		
-		con.createStatement().execute("DROP TABLE auth;"); 
 		String create_table = " CREATE TABLE auth(name varchar(49),pubID varchar(129));";	
 		con.createStatement().execute(create_table);
 	            
